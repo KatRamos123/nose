@@ -1,8 +1,4 @@
-@import "{{ site.theme }}";
-* {
-    color: #65361c;
-}
-
+Cuerpo.css
 body {
     background-color: #e3d2bb;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
