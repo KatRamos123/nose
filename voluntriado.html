@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voluntariado</title>
+  <link rel="stylesheet" href="Style/cuerpo.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="navbar">
+      <a class="navbar-brand" href="index.html"> El Gato Barista</a>
+      <a href="index.html">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="voluntriado.html">Voluntarido </a>
+      <a href="adopción.html">Adopción </a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <section id="Voluntariado">
+    <div class="containerVoluntariado">
+
+
+
+      <div class="card mb-3">
+        <div class="row g-0 grid-container">
+          <div class="col-md-4 parent">
+            <img src="img/Voluntariado 1.webp" class="img-fluid rounded-start" alt="capuchino en fondo cálido" width="500px"
+              height="500px">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Únete a Nuero equipo de Voluntarios 🐾</h3>
+              <p class="card-text">
+              <p>¿Te encantan los gatos?</p>
+              <p>¿Quieres ayudar mientras pasas un buen rato con ellos?</p>
+              <p>Únete a nuestro programa de voluntariado en El Gato Barista.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mb-3">
+        <div class="row g-0 grid-container">
+          <div class="col-md-4 parent">
+            <img src="img/Voluntariado 2.jpeg" class="img-fluid rounded-start" alt="capuchino en fondo cálido" width="500px"
+              height="500px">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">¿Que hacemos?</h3>
+              <ul class="card-text">
+                <ul>
+                  <li>Jugar con los gatos.</li>
+                  <li>Ayudar a mantener el espacio limpio.</li>
+                  <li>Apoyar en eventos de adopción.</li>
+                  <li>Llevarselos a sus casas cuando sea necesario.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row g-0 grid-container">
+          <div class="col-md-4 parent">
+            <img src="img/Voluntariado 3.jpeg" class="img-fluid rounded-start" alt="capuchino en fondo cálido" width="500px"
+              height="500px">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Requisitos</h3>
+              <ul class="card-text">
+      <ul>
+        <li>Ser mayor de 18 años.</li>
+        <li>Tener disponibilidad al menos 2 días a la semana.</li>
+        <li>No tener alergia a gatos.</li>
+        <li>Si es menor de 18 (mínimo 15) debe de venir con su tutor lega</li>
+      </ul>
+       </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="card mb-3">
+        <div class="row g-0 grid-container">
+          <div class="col-md-4 parent">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Postúlate como voluntariado</h3>
+              <ul class="card-text">
+      <form onsubmit="enviarFormularioVoluntariado(event)">
+        <form action="https://formsubmit.co/ramosrosaleskaterineariana@gmail.com" method="POST"></form>
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="Edad">Edad:</label><br>
+        <input type="number" id="Edad" name="Edad" required><br><br>
+
+        <label for="tutor">Nombre del Tuto:</label><br>
+        <input type="text" id="Tutor" name="Tutor" placeholder="Solo para menores de 18"><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="disponibilidad">Disponibilidad:</label><br>
+        <select id="disponibilidad" name="disponibilidad" required>
+          <option value="">Selecciona...</option>
+          <option value="lunes-miercoles">Lunes - Miércoles</option>
+          <option value="jueves-sabado">Jueves - Sábado</option>
+          <option value="domingo">Solo Domingos</option>
+        </select><br><br>
+
+        <button type="submit">Enviar solicitud</button>
+         </div>
+          </div>
+        </div>
+      </div>
+
+
+        <script>
+          document.querySelector("form").addEventListener("submit", function (event) {
+            const nombre = document.getElementById("nombre").value;
+            const email = document.getElementById("email").value;
+            const disponibilidad = document.getElementById("disponibilidad").value;
+
+            if (!nombre || !email || !disponibilidad) {
+              alert("¡Completa todos los campos obligatorios!");
+              event.preventDefault();
+            } else {
+              alert("¡Gracias por tu interés! Pronto nos pondremos en contacto contigo");
+              // Aquí podrías agregar código para enviar los datos a una base de datos
+            }
+          })
+  </script>
+  </section>
+
+</body>
+
+</html>
